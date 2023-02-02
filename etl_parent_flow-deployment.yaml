@@ -10,14 +10,8 @@ work_pool_name: null
 tags: []
 parameters: {}
 schedule: null
-is_schedule_active: true
+is_schedule_active: null
 infra_overrides: {}
-
-###
-### DO NOT EDIT BELOW THIS LINE
-###
-flow_name: etl-parent-flow
-manifest_path: null
 infrastructure:
   type: process
   env: {}
@@ -26,22 +20,25 @@ infrastructure:
   command: null
   stream_output: true
   working_dir: null
-  _block_document_id: c3e40b94-5314-45e9-b01d-cb7658517225
-  _block_document_name: anonymous-68382b83-67c2-474d-8189-6f86010f2575
-  _is_anonymous: true
   block_type_slug: process
   _block_type_slug: process
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: etl-parent-flow
+manifest_path: null
 storage:
-  repository: https://github.com/poch4319/data-engineering-zoomcamp
+  repository: https://github.com/poch4319/prefect_flow_etl
   reference: null
-  access_token: '**********'
+  access_token: null
   include_git_objects: true
-  _block_document_id: 65f663f8-2558-4f81-bf97-d33686425d8f
-  _block_document_name: github
+  _block_document_id: f24b696d-ccd2-4d31-8f66-e2efb1d59aea
+  _block_document_name: gitflow
   _is_anonymous: false
   block_type_slug: github
   _block_type_slug: github
-path: week_2_data_ingestion/homework_2/flows/
+path: ''
 entrypoint: etl_web_to_gcs.py:etl_parent_flow
 parameter_openapi_schema:
   title: Parameters
@@ -68,4 +65,4 @@ parameter_openapi_schema:
       type: string
   required: null
   definitions: null
-timestamp: '2023-02-01T10:28:34.664787+00:00'
+timestamp: '2023-02-02T02:13:36.712614+00:00'
